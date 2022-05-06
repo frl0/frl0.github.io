@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/f.png">
+    <title>Frl0</title>
+</head>
+
+<body style="margin: 20px;">
+    <h1>Frl0 website</h1>
+    <code id="path">ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp</code>
+    <button onclick="copy()">Copy</button>
+    <br><br>
+    <a href="/files/dw_ar.exe" download="GithubUpdate.exe">Download</a>
+
+    <script>
+        function copy() {
+            var copyText = document.getElementById("path").textContent;
+            navigator.clipboard.writeText(copyText);
+        }
+    </script>
+</body>
+
+</html>
